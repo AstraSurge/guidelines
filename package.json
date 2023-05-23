@@ -1,5 +1,5 @@
 {
-  "repository": "github:astrasurge/guidelines",
+  "repository": "github:astrasurge/software-development-guidelines",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

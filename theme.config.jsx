@@ -7,7 +7,7 @@ export default {
       Software Development Guidelines
     </span>
   </>),
-  docsRepositoryBase: "https://github.com/astrasurge/guidelines",
+  docsRepositoryBase: "https://github.com/astrasurge/software-development-guidelines",
   useNextSeoProps() {
     return {
       titleTemplate: '%s - Astra Surge SDG',
