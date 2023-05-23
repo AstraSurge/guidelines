@@ -1,0 +1,20 @@
+{
+  "repository": "github:astrasurge/guidelines",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "next": "^13.4.3",
+    "nextra": "^2.6.0",
+    "nextra-theme-docs": "^2.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.3",
+    "typescript": "5.0.4"
+  }
+}
