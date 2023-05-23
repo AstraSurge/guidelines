@@ -1,3 +1,7 @@
+---
+description: Welcome to Astra Surge's Software Development Guidelines – your go-to resource for understanding the coding norms, Git guidelines, and other software development standards employed within our organization
+---
+
 # Introduction
 Welcome to Astra Surge's Software Development Guidelines – your go-to resource for understanding the coding norms, Git guidelines, and other software development standards employed within our organization.  
 

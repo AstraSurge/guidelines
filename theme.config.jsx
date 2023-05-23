@@ -1,16 +1,34 @@
 import Logo from "./components/Logo"
+import { useRouter } from 'next/router'
 
 export default {
-  logo: (<>
-    <Logo />
-    <span style={{ marginLeft: '.4em', fontWeight: 800, fontSize: 20 }}>
-      Software Development Guidelines
-    </span>
-  </>),
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const url =
+      'https://software-development-guidelines.astrasurge.com' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+
+    return (
+      <>
+        <meta property="og:url" content={url} />
+      </>
+    )
+
+  },
+  logo: (() => {
+    const { locale } = useRouter()
+    return <>
+      <Logo />
+      <span style={{ marginLeft: '.4em', fontWeight: 800, fontSize: 20 }}>
+        {locale === "zh" ? "软件开发指南" : "Software Development Guidelines"}
+      </span>
+    </>
+  }),
   docsRepositoryBase: "https://github.com/astrasurge/software-development-guidelines",
   useNextSeoProps() {
+    const { locale } = useRouter()
     return {
-      titleTemplate: '%s - Astra Surge SDG',
+      titleTemplate: `%s - ${locale === "zh" ? "Astra Surge 软件开发指南" : "Astra Surge's Software Development Guidelines"}`,
     }
   },
   footer: {
